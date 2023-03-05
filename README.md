@@ -18,7 +18,6 @@ To get started, let's define what data annotation is. Data annotation is the pro
 To install the necessary Python libraries, open your terminal or command prompt and type the following command:
 
 ```python
-
 !pip install opencv-python pandas
 ```
 
@@ -321,13 +320,13 @@ In conclusion, data annotation can be a challenging task that requires attention
 Data annotation is an essential step in preparing datasets for machine learning. As a result, there is a growing demand for data annotators in the job market. In this section, we will briefly discuss some careers in data annotation.
 Careers in Data Annotation
 
-    **Data annotator**: This is the most obvious career path in data annotation. Data annotators are responsible for labeling datasets, reviewing annotations for accuracy, and ensuring that the data is of high quality.
+    **Data annotator** : This is the most obvious career path in data annotation. Data annotators are responsible for labeling datasets, reviewing annotations for accuracy, and ensuring that the data is of high quality.
 
-    **Quality assurance (QA) specialist**: A QA specialist is responsible for reviewing annotated datasets to ensure that they meet the required standards for accuracy and quality.
+    **Quality assurance (QA) specialist** : A QA specialist is responsible for reviewing annotated datasets to ensure that they meet the required standards for accuracy and quality.
 
-    **Machine learning engineer**: A machine learning engineer works with annotated data to build and train machine learning models. They use the labeled data to train the models and evaluate their performance.
+    **Machine learning engineer** : A machine learning engineer works with annotated data to build and train machine learning models. They use the labeled data to train the models and evaluate their performance.
 
-    **Data scientist**: Data scientists use annotated data to develop and implement data-driven solutions to complex business problems.
+    **Data scientist** : Data scientists use annotated data to develop and implement data-driven solutions to complex business problems.
 
 # Conclusion.
 
