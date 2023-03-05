@@ -75,7 +75,7 @@ preds = model.predict(x)
 print('Predicted:', decode_predictions(preds, top=3)[0])
 ```
 
-##2. *Object Detection*
+## 2. *Object Detection*
 
 Object detection involves identifying the location and type of one or more objects in an image. For example, we can detect the location of a person in an image and label it as "person". To automate object detection, we can use Python's OpenCV library. Here's a code snippet to detect objects using OpenCV:
 
@@ -97,7 +97,7 @@ cv2.waitKey(0)
 cv2.destroyAllWindows()
 ```
 
-# *3. Image Segmentation*
+## *3. Image Segmentation*
 
 Image segmentation involves dividing an image into multiple segments and assigning each segment a label. For example, we can segment an image of a person into segments representing different body parts and label each segment accordingly. To automate image segmentation, we can use Python's scikit-image library. Here's a code snippet to segment an image using scikit-image:
 
@@ -219,12 +219,15 @@ Polygon annotation involves drawing a polygon around an object or region of inte
 ## Automated Data Annotation.
 
 Automated data annotation is the process of using software tools to automatically label data. This is often used for large datasets or tasks that require repetitive labeling, such as image classification. Here are some common tools for automated data annotation in Python:
+
 ## 1. *Keras.*
 
 Keras is a high-level neural networks API that includes several built-in tools for data preprocessing and augmentation, including image classification and segmentation.
+
 ## 2. *OpenCV.*
 
 OpenCV is an open-source computer vision library that includes several tools for image processing and analysis, including object detection and tracking.
+
 ## 3. *Scikit-Image.*
 
 Scikit-Image is a collection of algorithms for image processing and computer vision tasks, including image segmentation and feature detection.
@@ -263,28 +266,28 @@ Data annotation is an important step in preparing a dataset for machine learning
 
 Data annotation can be subjective, meaning that different annotators may label the same data differently. This can lead to inconsistencies and errors in the dataset.
 
-## **Solution.**
-
+## **Solution:**
 One way to overcome subjectivity is to provide clear annotation guidelines and definitions for each label. Annotators should also receive proper training and feedback to ensure consistency in their labeling.
+
 ## *Challenge 2: Time-Consuming.*
 
 Data annotation can be a time-consuming process, especially for large datasets.
-Solution
 
+## **Solution:**
 One way to reduce the time needed for data annotation is to use automation tools such as Python scripts. These scripts can be used to perform repetitive tasks, such as image cropping or resizing, and to apply annotations in a consistent manner.
 
 ## *Challenge 3: Cost.*
 
 Data annotation can be costly, especially if it requires hiring annotators or purchasing specialized software.
-Solution
 
+## **Solution:**
 One way to reduce the cost of data annotation is to use open-source software and tools such as Python libraries. These tools are often free and can be customized to meet specific annotation needs.
 
 ## *Challenge 4: Error-Prone.*
 
 Data annotation can be error-prone, especially if it involves complex labeling tasks or large datasets.
-Solution
 
+## **Solution:**
 One way to reduce errors in data annotation is to use Python scripts that include automated error-checking and correction tools. For example, we can define a Python function that checks for duplicate or inconsistent labels and corrects them automatically.
 
 Here's an example function that checks for duplicate labels in an annotation file:
@@ -320,13 +323,13 @@ In conclusion, data annotation can be a challenging task that requires attention
 Data annotation is an essential step in preparing datasets for machine learning. As a result, there is a growing demand for data annotators in the job market. In this section, we will briefly discuss some careers in data annotation.
 Careers in Data Annotation
 
-    **Data annotator** : This is the most obvious career path in data annotation. Data annotators are responsible for labeling datasets, reviewing annotations for accuracy, and ensuring that the data is of high quality.
+    **Data annotator:** This is the most obvious career path in data annotation. Data annotators are responsible for labeling datasets, reviewing annotations for accuracy, and ensuring that the data is of high quality.
 
-    **Quality assurance (QA) specialist** : A QA specialist is responsible for reviewing annotated datasets to ensure that they meet the required standards for accuracy and quality.
+    **Quality assurance (QA) specialist:** A QA specialist is responsible for reviewing annotated datasets to ensure that they meet the required standards for accuracy and quality.
 
-    **Machine learning engineer** : A machine learning engineer works with annotated data to build and train machine learning models. They use the labeled data to train the models and evaluate their performance.
+    **Machine learning engineer:** A machine learning engineer works with annotated data to build and train machine learning models. They use the labeled data to train the models and evaluate their performance.
 
-    **Data scientist** : Data scientists use annotated data to develop and implement data-driven solutions to complex business problems.
+    **Data scientist:** Data scientists use annotated data to develop and implement data-driven solutions to complex business problems.
 
 # Conclusion.
 
