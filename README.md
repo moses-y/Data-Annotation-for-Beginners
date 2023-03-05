@@ -17,8 +17,7 @@ To get started, let's define what data annotation is. Data annotation is the pro
 
 To install the necessary Python libraries, open your terminal or command prompt and type the following command:
 
-```
-python
+```python
 
 !pip install opencv-python pandas
 ```
@@ -58,8 +57,7 @@ Types of Data Annotation
 
 Image classification involves assigning one or more labels to an image to indicate the object or objects it contains. For example, we can classify an image of a cat as "cat" or an image of a cat and a dog as "cat, dog". To automate image classification, we can use Python's Keras library. Here's a code snippet to classify images using a pre-trained Keras model:
 
-```
-python
+```python
 
 from keras.applications.resnet50 import ResNet50
 from keras.applications.resnet50 import preprocess_input, decode_predictions
@@ -82,8 +80,7 @@ print('Predicted:', decode_predictions(preds, top=3)[0])
 
 Object detection involves identifying the location and type of one or more objects in an image. For example, we can detect the location of a person in an image and label it as "person". To automate object detection, we can use Python's OpenCV library. Here's a code snippet to detect objects using OpenCV:
 
-```
-python
+```python
 
 import cv2
 
@@ -105,8 +102,7 @@ cv2.destroyAllWindows()
 
 Image segmentation involves dividing an image into multiple segments and assigning each segment a label. For example, we can segment an image of a person into segments representing different body parts and label each segment accordingly. To automate image segmentation, we can use Python's scikit-image library. Here's a code snippet to segment an image using scikit-image:
 
-```
-python
+```python
 
 from skimage import segmentation, color
 import matplotlib.pyplot as plt
@@ -123,8 +119,7 @@ Defining a Python Function to Automate Data Annotation
 
 To automate data annotation, we can define a Python function that takes in an input image and outputs the annotated image. Here's an example function that draws bounding boxes around objects in an image:
 
-```
-python
+```python
 
 import cv2
 
@@ -135,13 +130,8 @@ def annotate_image(image_path, objects):
         cv2.rectangle(image, (x, y), (x+w, y+h), (0, 255, 0), 2)
 
     return image
- ```
-
-We can then call this function with the image path and a list of objects to annotate. For example:
-
-
-```
-python
+ 
+# We can then call this function with the image path and a list of objects to annotate. For example:
 
 objects = [(50, 100, 200, 300), (300, 150, 400, 250)]
 annotated_image = annotate_image("image.jpg", objects)
@@ -162,15 +152,15 @@ Importance of Data Annotation
 
 Data annotation plays a crucial role in machine learning, as it helps to improve the accuracy and reliability of models. Here are some of the main reasons why data annotation is important:
 
-##1. *Training Machine Learning Models*.
+## 1. *Training Machine Learning Models*.
 
 Machine learning models require large amounts of data to learn patterns and make predictions. However, without proper annotation, the data may not be usable for training models. Data annotation provides the necessary labels and metadata that enable machine learning models to learn from the data.
 
-##2. *Improving Model Accuracy.*
+## 2. *Improving Model Accuracy.*
 
 The quality and accuracy of data annotation directly affect the performance of machine learning models. Accurate and consistent annotation helps models to learn from the data more effectively, leading to better accuracy and reliability.
 
-##3. *Enabling New Use Cases.*
+## 3. *Enabling New Use Cases.*
 
 Data annotation also enables new use cases that were not previously possible. For example, annotating medical images can help to identify diseases and inform treatment decisions. Similarly, annotating satellite images can help to identify patterns in agriculture or urban development.
 #Defining a Python Function to Automate Data Annotation
@@ -179,8 +169,7 @@ To automate data annotation, we can define a Python function that takes in an in
 
 
 
-```
-python
+```python
 import cv2
 
 def annotate_image(image_path, label):
@@ -194,11 +183,9 @@ def annotate_image(image_path, label):
     annotated_image = cv2.putText(image, label, bottom_left_corner, font, font_scale, font_color, thickness, cv2.LINE_AA)
     return annotated_image
 
-```
-We can then call this function with the image path and a label to annotate. For example:
+# We can then call this function with the image path and a label to annotate. For example:
 
-```
-python
+
 annotated_image = annotate_image("image.jpg", "cat")
 cv2.imshow("Annotated Image", annotated_image)
 cv2.waitKey(0)
@@ -218,11 +205,11 @@ Data annotation is the process of adding metadata or labels to a dataset to impr
 
 Manual data annotation is a time-consuming process that involves human annotators labeling data by hand. It is often used for tasks that require subjective judgment or complex labeling, such as sentiment analysis or image segmentation. Here are some common methods for manual data annotation:
 
-##1. *Point Annotation*
+## 1. *Point Annotation*
 
 Point annotation involves placing a marker or point on a specific feature of the data. For example, annotating the location of an object in an image or the start and end points of a sentence in a text document.
 
-##2. *Bounding Box Annotation.*
+## 2. *Bounding Box Annotation.*
 
 Bounding box annotation involves drawing a rectangle around an object or region of interest in an image or video frame. This is commonly used for object detection and tracking tasks.
 
@@ -246,8 +233,7 @@ Defining a Python Function to Automate Data Annotation
 
 To automate data annotation, we can define a Python function that takes in an input image and outputs the annotated image. Here's an example function that adds a bounding box to an image:
 
-```
-python
+```python
 
 import cv2
 
@@ -261,8 +247,7 @@ def annotate_image(image_path, objects):
 ```
 We can then call this function with the image path and a list of objects to annotate. For example:
 
-```
-python
+```python
 objects = [(50, 100, 200, 300), (300, 150, 400, 250)]
 annotated_image = annotate_image("image.jpg", objects)
 cv2.imshow("Annotated Image", annotated_image)
@@ -307,8 +292,7 @@ One way to reduce errors in data annotation is to use Python scripts that includ
 
 Here's an example function that checks for duplicate labels in an annotation file:
 
-```
-python
+```python
 def check_duplicates(annotation_file):
     with open(annotation_file, "r") as f:
         lines = f.readlines()
@@ -324,11 +308,10 @@ def check_duplicates(annotation_file):
         print("Found duplicates:", duplicates)
     else:
         print("No duplicates found.")
-```
-We can then call this function with the path to the annotation file to check for duplicates:
 
-```
-python
+# We can then call this function with the path to the annotation file to check for duplicates:
+
+
 check_duplicates("annotations.csv")
 ```
 This will print a message indicating whether any duplicate labels were found in the annotation file.
@@ -353,8 +336,7 @@ Careers in Data Annotation
 Data annotation is an important step in preparing datasets for machine learning. However, it can be a challenging task that requires attention to detail and expertise. To overcome these challenges, we can use automation tools such as Python scripts to reduce the time and cost of data annotation and to minimize errors.
 
 Here's an example Python script that automates the task of labeling images using the Pillow library:
-```
-python
+```python
 
 from PIL import Image, ImageDraw, ImageFont
 
