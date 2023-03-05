@@ -17,9 +17,9 @@ To get started, let's define what data annotation is. Data annotation is the pro
 
 To install the necessary Python libraries, open your terminal or command prompt and type the following command:
 
-python
+```python
 
-!pip install opencv-python pandas
+!pip install opencv-python pandas```
 
 # Types of Data Annotation.
 
